@@ -1,4 +1,4 @@
-import { Logger } from './types.js';
+import { Logger } from './types';
 
 export class DefaultLogger implements Logger {
   info(message: string, meta?: Record<string, unknown>): void {}

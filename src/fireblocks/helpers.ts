@@ -4,7 +4,7 @@ import {
   TransactionResponse,
   TransactionStatus,
 } from "fireblocks-sdk";
-import { Logger } from "./types.js";
+import { Logger } from "./types";
 
 require("dotenv").config();
 

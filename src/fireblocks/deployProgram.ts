@@ -14,7 +14,7 @@ import {
   FireblocksConnectionAdapter,
   FireblocksConnectionAdapterConfig,
   FeeLevel,
-} from "../src/index.js";
+} from "../src/index";
 import fs from "fs";
 
 require("dotenv").config();

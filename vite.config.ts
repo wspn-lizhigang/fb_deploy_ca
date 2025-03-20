@@ -11,26 +11,4 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  server: {
-    open: true,
-    host: true,
-    cors: true,
-    proxy: {
-      '/api': {
-        target: 'https://openapi-devapi.swapflow.io',
-        changeOrigin: true,
-        secure: false,
-        rewrite: (path) => path.replace(/^\/api/, '/api'),
-        headers: {
-          'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
-          'Access-Control-Allow-Headers': 'Content-Type, Authorization'
-        }
-      }
-    }
-  },
-  preview: {
-    host: true,
-    allowedHosts: ["openapi-dev.swapflow.io"],
-  },
 });
