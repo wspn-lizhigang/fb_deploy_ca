@@ -5,8 +5,8 @@ import {
   TransactionStatus,
 } from "fireblocks-sdk";
 import { Logger } from "./types";
-
-require("dotenv").config();
+import dotenv from "dotenv"; 
+dotenv.config();
 
 const DEFAULT_POLLING_INTERVAL = 2000;
 const MAX_RETRIES = 3;
